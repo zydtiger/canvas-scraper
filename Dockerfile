@@ -9,7 +9,7 @@ COPY ./ /app/
 # Install dependencies
 RUN pip install uv
 RUN uv sync --frozen --no-dev
-RUN DEBIAN_FRONTEND=noninteractive playwright install-deps
+RUN DEBIAN_FRONTEND=noninteractive uv run playwright install-deps
 RUN uv run playwright install chromium
 
 # Start server
