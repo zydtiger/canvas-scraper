@@ -1,0 +1,18 @@
+[project]
+name = "canvas-scraper"
+version = "0.1.0"
+description = "Scrapes student Canvas page for assignment and updates."
+authors = [
+    {name = "tigerding",email = "zhiyuanding01@gmail.com"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = "~=3.13.0"
+dependencies = [
+    "fastapi[standard]",
+    "playwright>=1.57.0",
+    "pydantic>=2.12.5",
+]
+
+[tool.uv]
+package = false
