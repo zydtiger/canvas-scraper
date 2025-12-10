@@ -1,4 +1,4 @@
-from .scrape_announcements import scrape_announcements_page
-from .scrape_assignments import scrape_assignments_page
+from .announcements_scraper import AnnouncementScraper
+from .assignments_scraper import AssignmentScraper
 
-__all__ = ["scrape_announcements_page", "scrape_assignments_page"]
+__all__ = ["AnnouncementScraper", "assignments_scraper"]
