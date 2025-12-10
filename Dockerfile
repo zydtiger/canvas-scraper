@@ -12,4 +12,4 @@ RUN uv sync --frozen --no-dev
 RUN uv run playwright install chromium
 
 # Start server
-CMD ["/usr/local/bin/uv", "run", "uvicorn", "src.app:app", "--port", "8000"]
+CMD ["/usr/local/bin/uv", "run", "uvicorn", "src.app:app", "--host", "0.0.0.0", "--port", "8000"]
