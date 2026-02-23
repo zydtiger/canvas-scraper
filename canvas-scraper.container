@@ -1,0 +1,16 @@
+[Unit]
+Description=Canvas Scraper Service
+After=network.target
+
+[Container]
+Image=canvas-scraper:latest
+ContainerName=canvas-scraper
+PublishPort=6543:8000
+Environment=TZ=America/New_York
+
+[Service]
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=default.target
